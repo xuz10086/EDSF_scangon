@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.indusfo.edzn.scangon"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 10
+        versionName "2.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '28.0.3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:27.1.1'
+    implementation project(':slidelistview_library')
+    implementation project(':oldninedroid_library')
+    api files('libs/fastjson-1.2.28.jar')
+    api files('libs/android-core-3.1.1-SNAPSHOT.jar')
+    api files('libs/core-3.1.1-SNAPSHOT.jar')
+    api files('libs/mediatek-android.jar')
+    api files('libs/mediatek-compatibility.jar')
+    api files('libs/gson-2.8.5.jar')
+    api files('libs/xUtils-2.6.14.jar')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api project(path: ':library')
+}

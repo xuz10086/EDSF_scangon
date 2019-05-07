@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.QueryActivity">
+
+    <com.indusfo.edzn.scangon.utils.TopBar
+        android:id="@+id/query_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5bb6d2"
+        app:leftBackground="@drawable/title_shape"
+        app:rightBackground="@drawable/title_shape3"
+        app:titleText="查询"
+        app:titleTextColor="#FFF"
+        app:titleTextSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/coditionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="10"
+            android:background="@android:color/transparent"
+            android:hint="请输入"
+            android:paddingLeft="5dp"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/front"
+            android:layout_width="13dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_shape"
+            android:gravity="center"
+            android:text="上一页"
+            android:textColor="@color/encode_view"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/page_current"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="页码"
+            android:clickable="true"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="13dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:text="下一页"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/encode_view"
+            android:background="@drawable/bt_shape"/>
+        <EditText
+            android:id="@+id/pageText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="跳转"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:inputType="number"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="13dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/encode_view"
+            android:text="跳转"
+            android:background="@drawable/bt_shape"/>
+    </LinearLayout>
+    <include layout="@layout/discover_divider_layout" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="#0FFF"
+        android:scrollingCache="false"
+        android:fadingEdge="none"
+        android:divider="#65c4b0"
+        android:dividerHeight="2dp"
+        android:listSelector="#0000"
+        />
+
+
+</LinearLayout>

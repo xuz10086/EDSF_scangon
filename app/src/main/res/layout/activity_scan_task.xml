@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/encode_view"
+    tools:context=".activity.ScanTaskActivity">
+
+    <com.indusfo.edzn.scangon.utils.TopBar
+        android:id="@+id/scanTask_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5bb6d2"
+        app:leftBackground="@drawable/title_shape"
+        app:rightBackground="@drawable/title_shape3"
+        app:titleText="扫码任务"
+        app:titleTextColor="#FFF"
+        app:titleTextSize="10sp" />
+
+    <include layout="@layout/scan_task_top" />
+
+    <TextView
+        android:id="@+id/sum_used_unUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="#15bc9a"
+        android:textSize="14sp" />
+
+    <include layout="@layout/scan_task_center"/>
+
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/qr_code_materials"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/qr_materials" />
+
+        <ImageView
+            android:id="@+id/qr_code_materials_set"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/qr_materials_set" />
+
+    </LinearLayout>
+-->
+</LinearLayout>

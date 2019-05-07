@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">物料防错系统</string>
+    <string name="title_activity_login">物料防错系统</string>
+    <string name="scan_app">扫码APP</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">用户名：</string>
+    <string name="prompt_password">密码：</string>
+    <string name="action_sign_in">登 录</string>
+    <string name="save_pwd">记住密码</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <!--标题-->
+    <declare-styleable name="TopBar">
+        <attr name="leftBackground" format="reference" />
+        <attr name="rightBackground" format="reference" />
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+    </declare-styleable>
+
+    <!--<string name="error_invalid_email">This email address is invalid</string>-->
+    <string name="error_invalid_password">登陆密码不能为空</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">用户名不能为空！</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_fuction">FuctionActivity</string>
+    <string name="title_activity_function">惠而浦程控器物料防错V1.0</string>
+    <string name="title_activity_setting_device">设备编码</string>
+    <string name="title_activity_unfinished_task">扫描任务</string>
+    <string name="title_activity_new_task">未完成任务</string>
+    <string name="create_task">新建任务</string>
+    <string name="pagecurrent">页码</string>
+    <string name="front">上一页</string>
+    <string name="next">下一页</string>
+    <string name="skip">跳转</string>
+    <string name="query_device">查询</string>
+    <string name="app_version">V1.0</string>
+    <!--新建扫描任务-->
+    <string name="title_activity_scan_task">新建扫描任务</string>
+    <string name="materials_code">物料编码</string>
+    <string name="equipment_code">设备编码</string>
+    <string name="ver_code">版本号</string>
+    <string name="scann_number">扫码单号</string>
+    <string name="task_num">任务单号</string>
+    <string name="scan_result">扫描结果</string>
+    <string name="title_activity_query">查询</string>
+    <!--扫码项目-->
+    <string name="placeHolder">placeHolder</string>
+    <string name="seekbar_add">+</string>
+    <string name="seekbar_minus">-</string>
+    <string name="create">生成</string>
+    <string name="scan_failed">扫描失败</string>
+    <string name="bottom_hint">建议与镜头保持10CM距离，尽量避免逆光和阴影</string>
+    <string name="top_hint">将条形码或二维码置于取景框内系统会自动扫描</string>
+    <string name="cancel">取消</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="button_ok">确定</string>
+    <string name="title_activity_test">Test</string>
+</resources>
